@@ -1,0 +1,754 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: white;
+}
+
+#right {
+	height: 4px;
+	width: 0px;
+	background-color: #333333;
+	position: relative;
+	top: 313px;
+	left: 840px;
+	animation: lines 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes lines{
+	0% {width: 0px; right: 1040px;}
+	100% {width: 225px; right: 840px;}
+
+}
+#left {
+	height: 4px;
+	width: 0px;
+	background-color: #333333;
+	position: relative;
+	top: 310px;
+	left: 0px;
+	transform-origin: 100% 50%;
+	animation: grow 2.2s;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes grow {
+	0% {width: 0px; left: 580px;}
+	100% {width: 225px; left: 380px;}
+}
+
+#arrow {
+	position: absolute;
+	top: 540px;
+	left: 49%;
+	width: 0; 
+    height: 0;
+    opacity: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  	border-top: 15px solid #333333;
+  	animation: bounce 3s infinite linear;
+  	animation-delay: 11s;
+}
+
+@keyframes bounce {
+	0%, 100% {top: 540px; opacity: 1;}
+	50% {top: 520px; opacity: 0;}
+}
+
+
+
+#redback {
+	height: 650px;
+	width: 100%;
+	background-color: #cc0033;
+	position: absolute;
+	top: 650px;
+	opacity: 0;
+	animation: fade 2s;
+	animation-delay: 12s;
+	animation-fill-mode: forwards;
+	
+}
+
+#redback p {
+	font-family: 'Quicksand', sans-serif;
+	color: #333333;
+	text-align: center;
+	padding-top: 100px;
+	width: 60%;
+	margin-left: 300px;
+	line-height: 30px;
+	font-size: 20px;
+	opacity: 0;
+	animation: fade 2s;
+	animation-delay: 13s;
+	animation-fill-mode: forwards;
+
+}
+
+#fashion {
+	height: 80px;
+	width: 550px;
+	background-color: white;
+	position: absolute;
+	left: 460px;
+	top: 260px;
+	opacity: 0;
+	animation: fade 2s;
+	animation-delay: 14s;
+	animation-fill-mode: forwards;
+
+}
+
+#fashion h1 {
+	color: #cc0033;
+	font-family: 'Roboto Slab', serif;
+	font-size: 29px;
+	letter-spacing: .5px;
+	text-align: center;
+	vertical-align: 40px;
+	line-height: 80px;
+	opacity: 0;
+	animation: fade 2s;
+	animation-delay: 14s;
+	animation-fill-mode: forwards;
+
+}
+
+#fashion h2 {
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	opacity: 0;
+	line-height: 1.5em;
+	animation: fade 2s;
+	animation-delay: 15s;
+	animation-fill-mode: forwards;
+
+}
+
+#fashion p {
+	color: white;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+	padding-top: 20px;
+	width: 600px;
+	position: absolute;
+	left: -325px;
+	opacity: 0;
+	animation: fade 2s;
+	animation-delay: 16s;
+	animation-fill-mode: forwards;
+
+
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#event {
+	height: 100%;
+	width: 100%;
+
+}
+
+#whiteback {
+	height: 100%;
+	width: 100%;
+}
+
+#whiteback h1 {
+	position: absolute;
+	top: 150px;
+	left: -1000px;
+	font-family: 'Roboto Slab', serif;
+	color: #cc0033;
+	text-align: center;
+	font-size: 130px;
+	line-height: 150px;
+	width: 1000px;
+	margin-left: -500px;
+	animation: hone_slide 1s ease-in-out;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hone_slide {
+	0% { left: -1000px;}
+	100% { left: 50%;}
+}
+
+#whiteback h3 {
+	position: absolute;
+	width: 1000px;
+	margin-left: -500px;
+	top: 330px;
+	left: 3000px;
+	color: #cc0033;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	font-size: 130px;
+	animation: hthree_slide 1s ease-in-out;
+	animation-delay: 9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hthree_slide {
+	0% {left:3000px;}
+	100% {left:50%;}
+}
+
+#whiteback h2 {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	width: 1000px;
+	margin-left: -500px;
+	font-family: 'Quicksand', sans-serif;
+	color: #333333;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 1.25px;
+	opacity: 0;
+	animation: fade 3s;
+	animation-delay: 9s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes fade {
+	0% {opacity:0;}
+	100% {opacity:100;}
+}*/
+
+
+
+
+
+
+p {
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	padding: 100px 300px 200px 300px;
+	line-height: 1.5em;
+
+}
+
+
+
+#ender {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	z-index: -1;
+	animation: ender 1s;
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes ender {
+	0% {z-index: -1;}
+	100% {z-index: 100;}
+}
+
+#nav n {
+ animation: flicker 1.3s steps(5, start) infinite;
+  -webkit-animation: flicker 1.3s steps(5, start) infinite;
+}
+@keyframes flicker {
+  to { visibility: hidden; }
+}
+@-webkit-keyframes flicker {
+  to { visibility: hidden;}
+}
+
+#nav {
+	width: 100%;
+	height: 50px;
+	background-color: #cc0033;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1.25px;
+	line-height: 50px;
+
+
+
+	}
+
+#nav {
+	animation-delay: 5s;
+  -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}	
+
+
+
+#nav2 {
+
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	color: #333333;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	box-shadow: 2px 2px 2px 2px lightgrey;
+
+}
+
+#nav2 {
+	animation-delay: 4.5s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+ul {
+	width: 100%
+	height: 70px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	vertical-align: middle;
+	line-height: 70px;
+	position: relative;
+	left: 160px;
+}
+
+ul {
+	animation-delay: 4.2s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+
+li {
+    float: left;
+     padding-left: 50px;
+     text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+}
+
+.logo {
+	width: 153.88px;
+	height: 50px;
+	padding: 10px 10px 30px 30px;
+
+}
+
+.logo {
+	animation-delay: 2s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+.search {
+	width: 166.604 px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.search {
+	animation-delay: 3s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+.cart{
+	width: 38.179px;
+	height: 35px;
+	vertical-align: middle;
+}
+.cart {
+	animation-delay: 3s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+
+.tops {
+	position: absolute;
+	top: 150px;
+	left: 675px;
+	height: 400px;
+	width: 490.088px;
+	z-index: 2;
+}
+
+
+.tops {
+	animation-delay: 5s, 7s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 20;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+ 
+.dress {
+	position: absolute;
+	top: 250px;
+	left: 280px;
+	height: 479.931px;
+	width: 350px;
+	z-index: 2;
+}
+
+.dress {
+	animation-delay: 5s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+#box {
+	height: 435px;
+	width: 1150px;
+	background-color: #cc0033;
+	position: absolute;
+	left: 150px;
+	top: 200px;
+	z-index: 1;
+
+}
+
+#box {
+	animation-delay: 4.5s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+
+#credit {
+	height: 80px;
+	width: 300px;
+	background-color: #333333;
+	text-align: center;
+	vertical-align: 50px;
+	position: absolute;
+	left: 305px;
+	top: 150px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	z-index: 2;
+	
+}
+
+#credit {
+	animation-delay: 4.6s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+
+#credit p {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	padding: 8px 0px 5px 0px;
+	font-size: 12px;
+	z-index: 2;
+
+}
+
+
+
+#creditborder {
+	height: 60px;
+	width: 278px;
+	background-color: #333333;
+	text-align: center;
+	vertical-align: 50px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	border: white 1px dotted;
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	z-index: 2;
+	
+	
+}
+
+
+#account {
+	height: 100px;
+	width: 490.088px;
+	background-color: #333333;
+	text-align: center;
+	vertical-align: 40px;
+	position: absolute;
+	left: 370px;
+	top: 430px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	z-index: 2;
+
+}
+
+#account {
+	animation-delay: 4.6s;
+    -webkit-animation-name: shakeme;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes shakeme {
+				0% { transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+#account p {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	padding: 10px 0px 5px 0px;
+	font-size: 12px;
+	z-index: 2;
+
+}
+
+#accountborder {
+	height: 80px;
+	width: 465.088px;
+	background-color: #333333;
+	text-align: center;
+	vertical-align: 55px;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	border: white 1px dotted;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+	
+	
+	
+}
+
+
+
+
+.section {
+	width: 100%;
+	height: 100%;
+
+}
+
+
+#opener {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: white;
+}
+
+
+
